@@ -25,7 +25,9 @@ const router = createBrowserRouter([
     path: "/download",
     element: <DownloadPage />,
   }
-]);
+], {
+  basename: "/resume-generator"
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
