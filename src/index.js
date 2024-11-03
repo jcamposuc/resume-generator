@@ -3,11 +3,34 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { CreatorTemplate1 } from './components/CreatorTemplate1';
+import { PreviewPage } from './components/PreviewPage';
+import { DownloadPage } from './components/DownloadPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  }, {
+    path: "/fill-resume",
+    element: <CreatorTemplate1 />,
+  }, {
+    path: "/preview",
+    element: <PreviewPage />,
+  }, {
+    path: "/download",
+    element: <DownloadPage />,
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
