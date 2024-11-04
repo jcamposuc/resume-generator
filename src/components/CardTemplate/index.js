@@ -4,7 +4,7 @@ export const CardTemplate = ({ imgSrc, path, disabled }) => {
     return (
         <Link
             to={path}
-            className="inline-flex flex-col items-center object-cover mx-auto bg-white border border-gray-200 rounded-sm shadow xl:mx-0 md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            className="inline-flex flex-col items-center object-cover mx-auto bg-white border border-gray-200 rounded-sm shadow xl:mx-0 md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 hover:shadow-lg">
             <img
                 className="object-cover w-full rounded-t-sm xs:h-auto md:h-96 md:w-full md:rounded-none md:rounded-s-sm"
                 src={imgSrc} alt={`template`} />
