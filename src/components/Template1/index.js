@@ -49,7 +49,7 @@ const Header = ({ name, lastName, occupation, profilePicture }) => (
                 width={150}
                 height={150}
                 alt="profile"
-                className='relative z-50 top-12' />
+                className='relative z-50 rounded-full top-12' />
         </div>
     </header>
 )
