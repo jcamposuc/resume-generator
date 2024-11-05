@@ -7,7 +7,7 @@ import defaultProfilePicture from '../../images/template1-profile.webp';
 const { DEFAULT_SKILLS, DEFAULT_EXPERIENCES, DEFAULT_EDUCATION } = require("../../constants");
 
 const Circle = () => (
-    <div className='absolute z-10 bg-white border rounded-full -bottom-1' style={{ width: "4px", height: "4px", padding: "4px", right: "-0.35rem" }} />
+    <div className='absolute z-10 w-1 h-1 p-1 bg-white border rounded-full -bottom-1' style={{ right: "-0.35rem" }} />
 )
 
 const ContactInfoIcon = ({ src, alt }) => <img src={src} alt={alt} className='inline-block w-5 h-5' />

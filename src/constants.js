@@ -1,3 +1,7 @@
+import { PreviewTemplate1 } from "./components/PreviewTemplate1";
+import PreviewTemplate2 from "./components/PreviewTemplate2";
+
+export const PIXELS_LETTER_SIZE = "1056px";
 export const PDF_OPTIONS = {
     filename: 'my-resume.pdf',
     margin: 0,
@@ -16,6 +20,8 @@ export const DEFAULT_SKILLS = [
     "Project Management Tools",
     "Strong Communication",
 ];
+
+export const DEFAULT_LANGUAGES = ["Spanish / Native", "English / Intermediate"];
 
 export const DEFAULT_EXPERIENCES = [
     {
@@ -59,3 +65,8 @@ export const DEFAULT_EDUCATION = [
         date: "2014 - 2016",
     },
 ]
+
+export const previewTemplates = {
+    "tp-1": PreviewTemplate1,
+    "tp-2": PreviewTemplate2,
+};

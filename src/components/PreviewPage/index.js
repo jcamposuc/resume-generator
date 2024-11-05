@@ -3,12 +3,14 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { FileStorage } from '../../FileStorage';
 import { Layout } from '../Layout';
-import { PreviewTemplate1 } from '../PreviewTemplate1';
+import { previewTemplates } from '../../constants';
 
 export const PreviewPage = () => {
     const [searchParams] = useSearchParams();
     const [info, setInfo] = useState(null);
     const [contentRef, pdgImage] = useHookWithRefCallback();
+    const template = searchParams.get("tp");
+    const PreviewTemplate = previewTemplates[template];
 
     useEffect(() => {
         const getData = async () => {
@@ -43,7 +45,7 @@ export const PreviewPage = () => {
                                 ) : (
                                     <div style={{ minWidth: "768px" }}>
                                         <Skeleton />
-                                        <PreviewTemplate1 info={info} contentRef={contentRef} />
+                                        <PreviewTemplate info={info} contentRef={contentRef} />
                                     </div>
                                 )
                             }

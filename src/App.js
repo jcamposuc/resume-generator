@@ -15,7 +15,7 @@ const App = () => (
       <li className='inline-flex lg:block lg:col-span-3 xl:col-span-2 lg:col-start-4'>
         <CardTemplate
           imgSrc={tp2}
-          path="/fill-resume?tp=tp-1"
+          path="/fill-resume?tp=tp-2"
           disabled={true} />
       </li>
       <li className='inline-flex lg:block lg:col-span-3 xl:col-start-2 xl:col-span-2'>

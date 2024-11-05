@@ -8,8 +8,9 @@ import { ExperiencesInputs } from '../Common/ExperiencesInputs';
 import { HeaderInfoInputs } from '../Common/HeaderInfoInputs';
 import { SkillsInputs } from '../Common/SkillsInputs';
 import { Layout } from '../Layout';
-import { PreviewTemplate1 } from '../PreviewTemplate1';
 import { SaveDraftButton } from '../SaveDraftButton';
+import { previewTemplates } from '../../constants';
+import { LanguageInputs } from '../Common/LanguageInputs';
 
 export const CreatorTemplate1 = () => {
     const formMethods = useForm();
@@ -17,10 +18,12 @@ export const CreatorTemplate1 = () => {
     const { handleSubmit, watch, reset } = formMethods;
     useInitializeDraft(reset);
     const [searchParams] = useSearchParams();
+    const template = searchParams.get("tp");
+    const PreviewTemplate = previewTemplates[template];
 
     const onSubmit = (values) => {
-        localStorage.setItem(`draft-${searchParams.get("tp")}`, JSON.stringify(values));
-        navigate(`/download?tp=${searchParams.get("tp")}`);
+        localStorage.setItem(`draft-${template}`, JSON.stringify(values));
+        navigate(`/download?tp=${template}`);
     }
 
     const allValues = watch();
@@ -38,6 +41,11 @@ export const CreatorTemplate1 = () => {
                         <SkillsInputs />
                         <ExperiencesInputs />
                         <EducationInputs />
+                        {
+                            template === "tp-2" && (
+                                <LanguageInputs />
+                            )
+                        }
                         <button
                             type="submit"
                             className="inline-flex items-center justify-center w-full px-6 py-4 mt-3 ml-auto mr-3 text-sm font-medium text-white rounded-sm md:justify-start md:py-2 md:w-auto bg-stone-900 hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 dark:bg-stone-600 dark:hover:bg-stone-700 dark:focus:ring-stone-800"
@@ -60,7 +68,7 @@ export const CreatorTemplate1 = () => {
                     </form>
                 </FormProvider>
                 <section className='hidden xl:block'>
-                    <PreviewTemplate1 info={allValues} />
+                    <PreviewTemplate info={allValues} />
                 </section>
             </div>
         </Layout>
