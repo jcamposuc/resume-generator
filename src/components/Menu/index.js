@@ -1,9 +1,10 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 export const Menu = () => {
     return (
         <Navbar fluid rounded>
-            <Navbar.Brand href="https://flowbite-react.com">
+            <Navbar.Brand href="https://jcamposuc.github.io/resume-generator">
                 <img src="https://images.vexels.com/content/142887/preview/growing-logistic-company-logo-2f366b.png" className="h-6 mr-3 sm:h-9" alt="Flowbite React Logo" />
                 <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Resume Generator</span>
             </Navbar.Brand>
@@ -16,8 +17,8 @@ export const Menu = () => {
                     }
                 >
                     <Dropdown.Header>
-                        <span className="block text-sm">Bonnie Green</span>
-                        <span className="block text-sm font-medium truncate">name@flowbite.com</span>
+                        <span className="block text-sm">Junior Campos</span>
+                        <span className="block text-sm font-medium truncate">junior.uc.9192@gmail.com</span>
                     </Dropdown.Header>
                     <Dropdown.Item>Dashboard</Dropdown.Item>
                     <Dropdown.Item>Settings</Dropdown.Item>

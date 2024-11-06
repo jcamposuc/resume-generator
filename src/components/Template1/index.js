@@ -117,7 +117,7 @@ const Experiences = ({ experiences = DEFAULT_EXPERIENCES }) => (
 )
 
 const Education = ({ education = DEFAULT_EDUCATION }) => (
-    <section className='row-span-2 p-3 border-r border-slate-400'>
+    <section className='p-3 border-r border-slate-400'>
         <SectionTitle title="education" />
         {
             education?.map((edu, index) => (

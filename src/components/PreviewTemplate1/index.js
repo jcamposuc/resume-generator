@@ -6,7 +6,7 @@ export const PreviewTemplate1 = ({ info, contentRef }) => {
     const profilePicture = header_info?.profilePicture;
 
     return (
-        <div id="section-template" className='px-1 font-serif text-xs font-light' ref={contentRef}>
+        <div id="section-template" className='sticky top-0 px-1 font-serif text-xs font-light' ref={contentRef}>
             <Template1.Header
                 name={header_info?.name}
                 lastName={header_info?.lastName}

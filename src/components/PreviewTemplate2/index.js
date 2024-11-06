@@ -7,7 +7,7 @@ const PreviewTemplate2 = ({ info, contentRef }) => {
     const profilePicture = header_info?.profilePicture;
 
     return (
-        <div id="section-template" className='relative font-serif text-xs font-light' ref={contentRef}>
+        <div id="section-template" className='sticky top-0 font-serif text-xs font-light' ref={contentRef}>
             <div className={`grid grid-cols-3 min-h-[1056px]`}>
                 <Template2.Header
                     name={header_info?.name}

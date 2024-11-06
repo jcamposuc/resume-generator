@@ -2,12 +2,22 @@ import html2pdf from 'html2pdf.js/dist/html2pdf.min.js';
 import { PDF_OPTIONS } from '../../constants';
 import { useState } from 'react';
 import pdfIcon from '../../images/pdf-icon.png';
+import { useSearchParams } from 'react-router-dom';
 
 export const DownloadPdfButton = ({ contentRef }) => {
     const [downloaded, setDownloaded] = useState(false);
+    const [searchParams] = useSearchParams();
+    const template = searchParams.get("tp");
 
     const convertToPdf = () => {
-        html2pdf().set(PDF_OPTIONS).from(contentRef.current).save();
+        const newPdfOptions = {
+            ...PDF_OPTIONS,
+            jsPDF: {
+                ...PDF_OPTIONS.jsPDF,
+                format: template === "tp-1" ? "a4" : PDF_OPTIONS.jsPDF.format,
+            },
+        }
+        html2pdf().set(newPdfOptions).from(contentRef.current).save();
         setDownloaded(true);
     };
 
