@@ -37,8 +37,8 @@ export const Job = ({ position, company, date, responsabilities }) => {
 
 const Header = ({ name, lastName, occupation, profilePicture }) => (
     <header className={`pt-6 col-span-3 absolute w-full`}>
-        <div className="relative flex justify-between p-6 overflow-y-visible bg-cyan-700">
-            <div className="content-center text-gray-100 uppercase">
+        <div className="relative p-6 bg-cyan-700">
+            <div className="relative text-gray-100 uppercase -top-3">
                 <h1 className={`text-4xl font-extrabold`} style={{ letterSpacing: 4 }}>{name || "Dani"}{" "}{lastName || "Schwaiger"}</h1>
                 <h2 className='mt-3 text-xl' style={{ letterSpacing: 4 }}>{occupation || "Graphic Designer"}</h2>
             </div>
@@ -47,7 +47,7 @@ const Header = ({ name, lastName, occupation, profilePicture }) => (
                 width={150}
                 height={150}
                 alt="profile"
-                className='absolute z-50 bg-white border-4 border-white rounded-full -top-2 right-6' />
+                className='absolute bg-white border-4 border-white rounded-full -top-2 right-6' />
         </div>
     </header>
 )

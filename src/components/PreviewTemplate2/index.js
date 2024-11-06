@@ -14,6 +14,7 @@ const PreviewTemplate2 = ({ info, contentRef }) => {
                     lastName={header_info?.lastName}
                     occupation={header_info?.occupation}
                     profilePicture={profilePicture} />
+
                 <div className="text-gray-300 pt-44 bg-cyan-950">
                     <Template2.ContactInformation
                         address={contact_info?.address}
