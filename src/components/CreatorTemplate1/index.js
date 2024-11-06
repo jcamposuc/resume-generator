@@ -26,6 +26,11 @@ export const CreatorTemplate1 = () => {
         navigate(`/download?tp=${template}`);
     }
 
+    const goToPreview = () => {
+        localStorage.setItem(`draft-${template}`, JSON.stringify(allValues));
+        navigate(`/preview?tp=${template}`);
+    }
+
     const allValues = watch();
 
     return (
@@ -57,14 +62,15 @@ export const CreatorTemplate1 = () => {
                             DONE!
                         </button>
                         <SaveDraftButton />
-                        <Link
-                            to={`/preview?tp=${searchParams.get("tp")}`}
+                        <button
+                            type='button'
+                            onClick={goToPreview}
                             className='inline-flex items-center justify-center w-full px-6 py-4 ml-0 text-sm font-medium text-white uppercase rounded-sm md:justify-start md:w-auto md:px-5 md:py-2 md:ml-3 bg-stone-500 hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800'>
                             <svg className="inline-flex items-center w-4 h-4 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
                             </svg>
                             Go to Preview
-                        </Link>
+                        </button>
                     </form>
                 </FormProvider>
                 <section className='hidden xl:block'>
