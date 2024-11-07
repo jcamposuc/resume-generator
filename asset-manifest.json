@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/resume-generator/static/css/main.52f6f054.css",
-    "main.js": "/resume-generator/static/js/main.b82ce4f8.js",
+    "main.css": "/resume-generator/static/css/main.d92ab286.css",
+    "main.js": "/resume-generator/static/js/main.cc9f1d9d.js",
     "static/js/453.e71bfd93.chunk.js": "/resume-generator/static/js/453.e71bfd93.chunk.js",
     "static/js/213.f593afa1.chunk.js": "/resume-generator/static/js/213.f593afa1.chunk.js",
     "static/js/732.3104f2a1.chunk.js": "/resume-generator/static/js/732.3104f2a1.chunk.js",
     "static/media/template-2.png": "/resume-generator/static/media/template-2.423edbfc2cefb28f306c.png",
-    "static/media/template-3.jpg": "/resume-generator/static/media/template-3.13dcd920cff6da8593ab.jpg",
     "static/media/template-1.webp": "/resume-generator/static/media/template-1.03fe79e01c560e7460c4.webp",
     "static/media/site-icon.png": "/resume-generator/static/media/site-icon.5ca05ce57b7fd5176f64.png",
     "static/media/phone-icon.png": "/resume-generator/static/media/phone-icon.c68a3d1fc69d48e2dc0c.png",
@@ -15,14 +14,14 @@
     "static/media/template1-profile.webp": "/resume-generator/static/media/template1-profile.c32a5e743d1602bcdc0a.webp",
     "static/media/pdf-icon.png": "/resume-generator/static/media/pdf-icon.e23884162032f2a0e9fe.png",
     "index.html": "/resume-generator/index.html",
-    "main.52f6f054.css.map": "/resume-generator/static/css/main.52f6f054.css.map",
-    "main.b82ce4f8.js.map": "/resume-generator/static/js/main.b82ce4f8.js.map",
+    "main.d92ab286.css.map": "/resume-generator/static/css/main.d92ab286.css.map",
+    "main.cc9f1d9d.js.map": "/resume-generator/static/js/main.cc9f1d9d.js.map",
     "453.e71bfd93.chunk.js.map": "/resume-generator/static/js/453.e71bfd93.chunk.js.map",
     "213.f593afa1.chunk.js.map": "/resume-generator/static/js/213.f593afa1.chunk.js.map",
     "732.3104f2a1.chunk.js.map": "/resume-generator/static/js/732.3104f2a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52f6f054.css",
-    "static/js/main.b82ce4f8.js"
+    "static/css/main.d92ab286.css",
+    "static/js/main.cc9f1d9d.js"
   ]
 }
