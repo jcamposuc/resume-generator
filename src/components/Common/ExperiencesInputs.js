@@ -95,7 +95,7 @@ export const ExperiencesInputs = ({ children }) => {
                     }])}
                     <input
                         type="text"
-                        className="block w-full text-base text-gray-900 border border-gray-300 rounded-sm placeholder:text-xs bg-gray-50 focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"
+                        className="block w-full text-base text-gray-900 border border-gray-300 rounded-sm placeholder:text-xs bg-gray-50 focus:ring-gray-500 focus:border-gray-500             "
                         placeholder="Responsability (Ex. Databse administration)"
                         value={responsability}
                         onChange={(e) => setResponsability(e.target.value)} />
@@ -136,7 +136,7 @@ const ListItems = ({ items, handleRemove }) => {
                     <li className='pl-1 mb-1' key={`item-${index}`}>
                         <button
                             type="button"
-                            className="px-2 py-1 text-sm font-medium text-white bg-orange-900 rounded-sm hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-orange-900 dark:focus:ring-red-800"
+                            className="px-2 py-1 text-sm font-medium text-white bg-orange-900 rounded-sm hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300      "
                             onClick={() => handleRemove(index)}>
                             Remove
                         </button>

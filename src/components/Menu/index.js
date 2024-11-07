@@ -6,7 +6,7 @@ export const Menu = () => {
         <Navbar fluid rounded>
             <Navbar.Brand href="https://jcamposuc.github.io/resume-generator">
                 <img src="https://images.vexels.com/content/142887/preview/growing-logistic-company-logo-2f366b.png" className="h-6 mr-3 sm:h-9" alt="Flowbite React Logo" />
-                <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Resume Generator</span>
+                <span className="self-center text-xl font-semibold whitespace-nowrap  ">Resume Generator</span>
             </Navbar.Brand>
             <div className="flex md:order-2">
                 <Dropdown

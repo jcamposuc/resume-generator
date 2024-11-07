@@ -24,7 +24,7 @@ export const SkillsInputs = () => {
     return (
         <FieldSetLayout legend="Skills">
             <div className="col-span-2">
-                <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Type here!</label>
+                <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only  ">Type here!</label>
                 <div className="relative">
                     <AddFieldToList.InputField
                         value={skill}
