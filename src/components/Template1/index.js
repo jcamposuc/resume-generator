@@ -3,8 +3,14 @@ import emailIcon from '../../images/email-icon.png';
 import locationIcon from '../../images/location-icon.png';
 import siteIcon from '../../images/site-icon.png';
 import defaultProfilePicture from '../../images/template1-profile.webp';
+import styled from 'styled-components';
 
 const { DEFAULT_SKILLS, DEFAULT_EXPERIENCES, DEFAULT_EDUCATION } = require("../../constants");
+
+const StyledHeader = styled.header`
+  background-color: ${props => props.header_bg};
+  color: ${props => props.header_text_color};
+`;
 
 const Circle = () => (
     <div className='absolute z-10 w-1 h-1 p-1 bg-white border rounded-full -bottom-1' style={{ right: "-0.35rem" }} />
@@ -37,8 +43,10 @@ export const Job = ({ position, company, date, responsabilities }) => {
     )
 }
 
-const Header = ({ name, lastName, occupation, profilePicture }) => (
-    <header className={`relative p-2 px-10 bg-slate-100`}>
+const Header = ({ name, lastName, occupation, profilePicture, themeColor }) => (
+    <StyledHeader
+        className={`relative p-2 px-10`}
+        {...themeColor}>
         <div className="relative flex justify-between overflow-y-visible">
             <div className="content-center uppercase">
                 <h1 className={`text-4xl`} style={{ letterSpacing: 8 }}>{name || "Dani"} <span className='font-extrabold'>{lastName || "Schwaiger"}</span></h1>
@@ -51,7 +59,7 @@ const Header = ({ name, lastName, occupation, profilePicture }) => (
                 alt="profile"
                 className='relative z-50 rounded-full top-12' />
         </div>
-    </header>
+    </StyledHeader>
 )
 
 const ContactInformation = ({ phone, email, address, website }) => (

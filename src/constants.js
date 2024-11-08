@@ -70,3 +70,18 @@ export const previewTemplates = {
     "tp-1": PreviewTemplate1,
     "tp-2": PreviewTemplate2,
 };
+
+export const THEME_COLORS = {
+    "tp-1": {
+        header_bg: "#f5f5f4", // bg-stone-100
+        header_text_color: "#000000", // black
+    },
+    "tp-2": {
+        header_bg: "#0e7490", // bg-cyan-700
+        header_text_color: "#f3f4f6", // text-gray-100,
+        sidebar_bg: "#083344", // bg-cyan-950,
+        sidebar_text_color: "#d1d5db", // text-gray-300
+        icon_color: "#e5e7eb", // text-gray-200
+        body_bg: "#f1f5f9", // bg-slate-100
+    },
+}
